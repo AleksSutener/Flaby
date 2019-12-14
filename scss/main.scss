@@ -455,6 +455,9 @@ h1, .h1, h2, .h2 {
     margin-left: auto;
     top: 42px;
     display: none;
+    &:focus {
+        outline: none;
+    }
     @media(max-width: 650px) {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -462,7 +465,7 @@ h1, .h1, h2, .h2 {
     }
     &-line {
         display: block;
-        width: 100%;
+        width: 30px;
         height: 3px;
         background: $color_light;
         border-radius: 5px;
@@ -646,6 +649,7 @@ h1, .h1, h2, .h2 {
 .comments {
     padding: 38px 0 105px;
     background: #f3f9fa url('../img/comments_bg.jpg') center / cover  no-repeat;
+    overflow-x: hidden;
     &-slider {
         max-width: 730px;
         margin: 0 auto;

@@ -550,6 +550,10 @@ h1, .h1, h2, .h2 {
   display: none;
 }
 
+.menu-open:focus {
+  outline: none;
+}
+
 @media (max-width: 650px) {
   .menu-open {
     display: -webkit-box;
@@ -560,7 +564,7 @@ h1, .h1, h2, .h2 {
 
 .menu-open-line {
   display: block;
-  width: 100%;
+  width: 30px;
   height: 3px;
   background: #fff;
   border-radius: 5px;
@@ -768,6 +772,7 @@ h1, .h1, h2, .h2 {
 .comments {
   padding: 38px 0 105px;
   background: #f3f9fa url("../img/comments_bg.jpg") center/cover no-repeat;
+  overflow-x: hidden;
 }
 
 .comments-slider {
